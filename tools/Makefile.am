@@ -4,7 +4,7 @@ bin_PROGRAMS = \
 	gst-typefind-@GST_API_VERSION@
 
 gst_inspect_@GST_API_VERSION@_SOURCES = gst-inspect.c tools.h
-gst_inspect_@GST_API_VERSION@_CFLAGS = $(GST_OBJ_CFLAGS)
+gst_inspect_@GST_API_VERSION@_CFLAGS = $(GST_OBJ_CFLAGS) $(PRINTF_CFLAGS)
 gst_inspect_@GST_API_VERSION@_LDADD = $(GST_OBJ_LIBS)
 
 gst_typefind_@GST_API_VERSION@_SOURCES = gst-typefind.c tools.h
