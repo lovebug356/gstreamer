@@ -43,7 +43,7 @@ EXAMPLES = \
 	norebuffer \
 	playbin \
 	decodebin \
-	playsink 
+	playsink
 
 BUILT_SOURCES = \
 	elementmake.c elementcreate.c elementget.c elementlink.c elementfactory.c \
@@ -133,4 +133,4 @@ TESTS = bin \
 noinst_PROGRAMS = $(EXAMPLES)
 
 testrtpool_LDADD = $(GST_OBJ_LIBS) $(PTHREAD_LIBS)
-testrtpool_CFLAGS = $(GST_OBJ_CFLAGS) $(PTHREAD_CFLAGS)
+testrtpool_CFLAGS = $(GST_OBJ_CFLAGS) $(PTHREAD_CFLAGS) -Qunused-arguments

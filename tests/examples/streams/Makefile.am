@@ -9,6 +9,6 @@ stream_status_CFLAGS = $(GST_OBJ_CFLAGS)
 
 rtpool_test_SOURCES = rtpool-test.c testrtpool.h testrtpool.c
 rtpool_test_LDADD = $(GST_OBJ_LIBS) $(PTHREAD_LIBS)
-rtpool_test_CFLAGS = $(GST_OBJ_CFLAGS) $(PTHREAD_CFLAGS)
+rtpool_test_CFLAGS = $(GST_OBJ_CFLAGS) $(PTHREAD_CFLAGS) -Qunused-arguments
 
 EXTRA_DIST = rtpool-test.c testrtpool.h testrtpool.c
